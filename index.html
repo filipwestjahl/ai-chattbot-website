@@ -24,6 +24,38 @@
     button { background: #2563eb; color: white; border: none; padding: 0.75rem; border-radius: 5px; font-size: 1rem; cursor: pointer; }
     button:hover { background: #1d4ed8; }
     iframe { width: 100%; height: 500px; border: none; margin-top: 1rem; border-radius: 8px; }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 80px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 700px;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover { color: black; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
     @media (max-width: 600px) {
       header h1 { font-size: 1.5rem; }
       header p { font-size: 1rem; }
@@ -46,7 +78,23 @@
   <section>
     <h2>Vad är det?</h2>
     <p>Jag hjälper dig att sätta upp en AI-chattbot som kopplas till din hemsida. Den tränas på dina egna texter, FAQ eller länkar och svarar automatiskt på frågor från dina besökare.</p>
+    <p><a href="#" onclick="document.getElementById('modalInfo').style.display='block'">📘 Läs mer – klicka här</a></p>
   </section>
+
+  <div id="modalInfo" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modalInfo').style.display='none'">&times;</span>
+      <h2>Så här fungerar det</h2>
+      <ol>
+        <li><strong>Skicka innehåll:</strong> Du skickar texter, FAQ eller länkar.</li>
+        <li><strong>Träning:</strong> Jag laddar upp innehållet i AI-motorn och tränar den.</li>
+        <li><strong>Demo & justering:</strong> Du får testa boten innan publicering.</li>
+        <li><strong>Publicering:</strong> Du får en kodsnutt att lägga på din hemsida.</li>
+      </ol>
+      <h3>Exempel på chatbot</h3>
+      <iframe src="https://www.chatbase.co/chatbot-iframe/your-demo-id"></iframe>
+    </div>
+  </div>
 
   <section>
     <h2>Så här funkar det</h2>
