@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Chattbot till din hemsida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+    header { background: #111827; color: white; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0 0 0.5rem 0; font-size: 2rem; }
+    header p { margin: 0; font-size: 1.1rem; }
+    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    h2 { color: #111827; font-size: 1.5rem; margin-top: 0; }
+    .price-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .price-table th, .price-table td { border: 1px solid #ddd; padding: 0.75rem; text-align: left; font-size: 0.95rem; }
+    .price-table th { background-color: #f3f4f6; }
+    form { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+    input, textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; width: 100%; }
+    button { background: #2563eb; color: white; border: none; padding: 0.75rem; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      header p { font-size: 1rem; }
+      section { margin: 1rem; padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Din AI-chattbot – installerad på 24 timmar</h1>
+    <p>Få en smart AI-assistent som svarar på dina kunders frågor – dygnet runt.</p>
+  </header>
+
+  <section>
+    <h2>Vad är det?</h2>
+    <p>Jag hjälper dig att sätta upp en AI-chattbot som kopplas till din hemsida. Den tränas på dina egna texter, FAQ eller länkar och svarar automatiskt på frågor från dina besökare.</p>
+  </section>
+
+  <section>
+    <h2>Så här funkar det</h2>
+    <ol>
+      <li>Du skickar texter eller länkar till din hemsida</li>
+      <li>Jag tränar chattboten med ditt innehåll</li>
+      <li>Du får en kodsnutt som du enkelt klistrar in på din hemsida</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Pris</h2>
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th>Paket</th>
+          <th>Innehåll</th>
+          <th>Pris</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Startpaket</td>
+          <td>Installation, träning av bot, kodsnutt för hemsida</td>
+          <td>1495 kr (engångskostnad)</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>Löpande uppdateringar av innehållet</td>
+          <td>99 kr/mån</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Kontakta mig</h2>
+    <form>
+      <input type="text" placeholder="Namn" required>
+      <input type="email" placeholder="E-post" required>
+      <input type="text" placeholder="Företag (valfritt)">
+      <input type="text" placeholder="Hemsida (valfritt)">
+      <textarea rows="4" placeholder="Meddelande"></textarea>
+      <button type="submit">Skicka förfrågan</button>
+    </form>
+  </section>
+</body>
+</html>
