@@ -11,6 +11,9 @@
     header { background: #111827; color: white; padding: 2rem 1rem; text-align: center; }
     header h1 { margin: 0 0 0.5rem 0; font-size: 2rem; }
     header p { margin: 0; font-size: 1.1rem; }
+    nav { background: #e5e7eb; padding: 1rem; text-align: center; }
+    nav a { margin: 0 1rem; text-decoration: none; color: #111827; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
     section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
     h2 { color: #111827; font-size: 1.5rem; margin-top: 0; }
     .price-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
@@ -20,9 +23,11 @@
     input, textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; width: 100%; }
     button { background: #2563eb; color: white; border: none; padding: 0.75rem; border-radius: 5px; font-size: 1rem; cursor: pointer; }
     button:hover { background: #1d4ed8; }
+    iframe { width: 100%; height: 500px; border: none; margin-top: 1rem; border-radius: 8px; }
     @media (max-width: 600px) {
       header h1 { font-size: 1.5rem; }
       header p { font-size: 1rem; }
+      nav a { display: block; margin: 0.5rem 0; }
       section { margin: 1rem; padding: 1rem; }
     }
   </style>
@@ -32,6 +37,11 @@
     <h1>Din AI-chattbot – installerad på 24 timmar</h1>
     <p>Få en smart AI-assistent som svarar på dina kunders frågor – dygnet runt.</p>
   </header>
+
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="om-mig.html">Om mig</a>
+  </nav>
 
   <section>
     <h2>Vad är det?</h2>
@@ -70,6 +80,13 @@
         </tr>
       </tbody>
     </table>
+  </section>
+
+  <section>
+    <h2>Se ett exempel på chattbot</h2>
+    <p>Här nedan kan du testa en demo av hur en AI-chattbot kan se ut i praktiken. Den här boten är tränad på en fiktiv företagssida och svarar på vanliga kundfrågor:</p>
+    <iframe src="https://www.chatbase.co/chatbot-iframe/your-demo-id"></iframe>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #666;">*OBS: Demoboten är endast ett exempel och svarar inte på riktiga frågor.</p>
   </section>
 
   <section>
